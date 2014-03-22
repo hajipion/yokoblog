@@ -1,0 +1,276 @@
+@charset "UTF-8";
+/*-- clear--*/
+html, body, div, p, img, header, footer, nav, section, article, aside, figure,
+h1, h2, h3, h4, h5, h6,
+input, button, textarea {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  box-shadow: none; }
+
+a {
+  text-decoration: none; }
+
+/*-- common --*/
+a img:hover {
+  opacity: 0.7; }
+
+.inner {
+  width: 1080px;
+  margin: 0 auto; }
+
+body {
+  width: 100%;
+  min-width: 1080px;
+  margin: 0;
+  padding: 0;
+  background: url(images/background.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top left;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  letter-spacing: 1px; }
+
+footer {
+  position: relative;
+  bottom: 0;
+  margin-top: -50px;
+  width: 100%;
+  height: 306px;
+  background: url(images/footer-background.png) repeat-x; }
+  footer .inner {
+    width: 1080px;
+    height: 306px;
+    background: url(images/footer.png) no-repeat; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 1080px;
+  height: auto;
+  overflow: hidden; }
+  .wrapper .sidebar {
+    float: left;
+    padding-bottom: 32768px;
+    margin-bottom: -32768px;
+    width: 250px;
+    height: 100%;
+    background: url(images/sidebar.png);
+    color: white; }
+    .wrapper .sidebar p {
+      text-align: center; }
+    .wrapper .sidebar .logo {
+      margin-top: 40px; }
+    .wrapper .sidebar .catch {
+      margin-top: 20px; }
+    .wrapper .sidebar .profile {
+      margin-top: 10px; }
+    .wrapper .sidebar a {
+      text-decoration: underline; }
+    .wrapper .sidebar .categories {
+      margin-top: 30px; }
+      .wrapper .sidebar .categories h2 {
+        padding-left: 15px;
+        font-size: 17px; }
+      .wrapper .sidebar .categories ul {
+        width: 200px; }
+        .wrapper .sidebar .categories ul li {
+          margin-bottom: 10px; }
+          .wrapper .sidebar .categories ul li a {
+            color: white; }
+            .wrapper .sidebar .categories ul li a:hover {
+              color: yellow; }
+    .wrapper .sidebar .latest {
+      margin-top: 40px; }
+      .wrapper .sidebar .latest h2 {
+        padding-left: 15px;
+        font-size: 17px; }
+      .wrapper .sidebar .latest ul {
+        width: 200px;
+        font-size: 16px; }
+        .wrapper .sidebar .latest ul li {
+          margin-bottom: 10px; }
+          .wrapper .sidebar .latest ul li a {
+            color: white; }
+            .wrapper .sidebar .latest ul li a:hover {
+              color: yellow; }
+  .wrapper .main {
+    float: left;
+    padding-bottom: 32768px;
+    margin-bottom: -32768px;
+    width: 830px; }
+    .wrapper .main nav {
+      width: 100%;
+      height: 80px;
+      background: white;
+      overflow: hidden; }
+      .wrapper .main nav a {
+        padding-top: 42px;
+        padding-bottom: 5px;
+        width: 140px;
+        display: block;
+        float: left;
+        text-align: center; }
+        .wrapper .main nav a:first-child {
+          padding-top: 30px;
+          margin-left: 60px;
+          border-bottom: 20px solid #A4C89F; }
+        .wrapper .main nav a:nth-child(2) {
+          border-bottom: 10px solid #FAC37A; }
+        .wrapper .main nav a:nth-child(3) {
+          border-bottom: 10px solid #95D3DD; }
+        .wrapper .main nav a:nth-child(4) {
+          border-bottom: 10px solid #EFA38F; }
+        .wrapper .main nav a:nth-child(5) {
+          border-bottom: 10px solid #CDC9C5; }
+        .wrapper .main nav a:hover {
+          padding-top: 30px;
+          border-bottom: 20px solid #A4C89F; }
+        .wrapper .main nav a .current {
+          padding-top: 30px;
+          border-bottom: 20px solid #A4C89F; }
+        .wrapper .main nav a p {
+          color: #5D5D5D; }
+    .wrapper .main .mainvisual {
+      width: 830px;
+      height: 280px;
+      background: url(images/cat-ios.png) no-repeat; }
+      .wrapper .main .mainvisual h1 {
+        padding-top: 120px;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        text-shadow: 0 0 5px black;
+        letter-spacing: 3px; }
+      .wrapper .main .mainvisual p {
+        padding-top: 70px;
+        padding-right: 25px;
+        text-align: right;
+        color: white;
+        font-size: 15px;
+        text-shadow: 0 0 3px black; }
+    .wrapper .main .contents {
+      padding-bottom: 100px;
+      width: 100%;
+      height: auto;
+      background: #F7F1EB; }
+      .wrapper .main .contents article {
+        margin: 0 auto;
+        padding-top: 50px;
+        width: 780px;
+        overflow: hidden; }
+        .wrapper .main .contents article h2 {
+          margin-top: 70px;
+          margin-bottom: 30px;
+          margin-left: auto;
+          margin-right: auto;
+          padding-left: 35px;
+          padding-bottom: 10px;
+          width: 680px;
+          background: url(images/headline.png) no-repeat;
+          background-position: center left;
+          background-size: 723px 32px;
+          font-size: 20px;
+          color: #333;
+          clear: both; }
+        .wrapper .main .contents article p {
+          float: right;
+          margin-top: 20px;
+          padding: 10px;
+          width: 560px;
+          background: white;
+          border-radius: 5px;
+          box-shadow: 0 0 2px black;
+          color: #333;
+          position: relative; }
+          .wrapper .main .contents article p:before {
+            border: 8px solid transparent;
+            border-right-color: white;
+            border-left-width: 0;
+            left: -7px;
+            content: "";
+            display: block;
+            top: 13px;
+            position: absolute;
+            width: 0;
+            z-index: 1; }
+          .wrapper .main .contents article p:after {
+            border: 8px solid transparent;
+            border-right-color: #666;
+            border-left-width: 0;
+            left: -8px;
+            content: "";
+            display: block;
+            top: 13px;
+            position: absolute;
+            width: 0; }
+        .wrapper .main .contents article div {
+          margin: 10px auto;
+          width: 700px;
+          min-height: 88px;
+          background-position: top left; }
+          .wrapper .main .contents article div.komase {
+            background: url(images/komase.png) no-repeat; }
+          .wrapper .main .contents article div.hajipion {
+            background: url(images/hajipion.png) no-repeat; }
+      .wrapper .main .contents .comments {
+        margin: 0 auto;
+        width: 780px;
+        margin-top: 40px;
+        padding-bottom: 40px;
+        border-top: 1px solid #CCC;
+        overflow: hidden; }
+        .wrapper .main .contents .comments .comment-wrapper {
+          margin: 0 auto;
+          margin-top: 100px;
+          padding: 20px;
+          width: 720px;
+          height: auto;
+          background: white;
+          border-radius: 5px;
+          box-shadow: 0 0 2px black;
+          z-index: 0; }
+          .wrapper .main .contents .comments .comment-wrapper h3 {
+            margin: 0px auto;
+            margin-top: -100px;
+            width: 226px;
+            height: 118px;
+            background: url(images/comment.png) no-repeat;
+            text-align: center;
+            color: white;
+            font-size: 26px;
+            z-index: 10; }
+          .wrapper .main .contents .comments .comment-wrapper .comment {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #DDD;
+            overflow: hidden; }
+            .wrapper .main .contents .comments .comment-wrapper .comment .thumbnail {
+              float: left;
+              margin-left: 10px; }
+            .wrapper .main .contents .comments .comment-wrapper .comment .time {
+              text-align: right;
+              float: right;
+              margin-top: 5px;
+              margin-right: 10px;
+              font-size: 13px;
+              color: #777; }
+            .wrapper .main .contents .comments .comment-wrapper .comment .author {
+              width: 300px;
+              float: left;
+              margin-top: 5px;
+              margin-left: 20px;
+              color: #D96D00; }
+            .wrapper .main .contents .comments .comment-wrapper .comment .content {
+              width: 630px;
+              float: left;
+              color: #555;
+              margin-top: 10px;
+              margin-left: 20px; }
+          .wrapper .main .contents .comments .comment-wrapper .respond {
+            margin-top: 20px; }
+            .wrapper .main .contents .comments .comment-wrapper .respond p {
+              text-align: center; }
